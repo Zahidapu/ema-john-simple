@@ -2,7 +2,6 @@ import React from 'react';
 import './ReviewIteam.css'
 
 const ReviewIteam = (props) => {
-    console.log(props);
     const {name,quantity}=props.product;
     return (
         <div className="review-iteam">

@@ -5,6 +5,7 @@ import ReviewIteam from '../ReviewIteam/ReviewIteam';
 
 const Review = () => {
     const [cart,setCart] = useState([]);
+
     useEffect(()=>{
         //cart
         const savedCart = getDatabaseCart();
@@ -15,7 +16,7 @@ const Review = () => {
             return product;
         });
         setCart(cartProducts);
-    })
+    },[]);
     return (
         <div>
             <h1>cart: {cart.length}</h1>
